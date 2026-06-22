@@ -1,163 +1,309 @@
 <!DOCTYPE html>
-
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>رسالة لـ Safroot ❤️</title>
+
+<title>رسالة خاصة لـ Safroot ❤️</title>
+
 <style>
 body{
-    margin:0;
-    font-family:Tahoma,sans-serif;
-    background:linear-gradient(135deg,#111,#2b0a1f);
-    color:white;
-    text-align:center;
+margin:0;
+font-family:Tahoma,Arial;
+background:linear-gradient(135deg,#050505,#3b1028);
+color:white;
+text-align:center;
+overflow-x:hidden;
 }
+
 .container{
-    padding:20px;
-    max-width:800px;
-    margin:auto;
+max-width:850px;
+margin:auto;
+padding:20px;
 }
+
 .card{
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(10px);
-    border-radius:20px;
-    padding:20px;
-    margin:20px 0;
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(12px);
+border-radius:25px;
+padding:25px;
+margin:25px 0;
+box-shadow:0 0 30px rgba(255,0,120,.2);
+line-height:2;
+font-size:18px;
 }
-input{
-    padding:12px;
-    border:none;
-    border-radius:10px;
-    width:220px;
-    text-align:center;
-}
-button{
-    padding:12px 20px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    margin-top:10px;
-}
+
 .hidden{display:none;}
+
 .heart{
-    font-size:70px;
-    animation:pulse 1.5s infinite;
+font-size:90px;
+animation:pulse 1.5s infinite;
 }
+
 @keyframes pulse{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.2);}
-    100%{transform:scale(1);}
+50%{transform:scale(1.2)}
 }
+
+input,button{
+padding:13px;
+border-radius:15px;
+border:0;
+margin:10px;
+}
+
+button{
+background:#ff4f91;
+color:white;
+font-size:17px;
+}
+
+.counter{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.box{
+background:rgba(255,255,255,.15);
+padding:15px;
+border-radius:15px;
+min-width:80px;
+}
+
 #typing{
-    min-height:80px;
-    font-size:22px;
-    line-height:1.8;
+font-size:22px;
+min-height:100px;
 }
-#counter{
-    font-size:24px;
-    margin:20px 0;
+
+.heart-fall{
+position:fixed;
+top:-20px;
+animation:fall 5s linear infinite;
 }
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
+}
+
 </style>
+
 </head>
+
 <body>
 
+
 <div id="login" class="container">
-    <div class="heart">❤️</div>
-    <h1>رسالة خاصة لـ Safroot</h1>
-    <p>ادخلي كلمة السر</p>
-    <input type="password" id="pass" placeholder="كلمة السر">
-    <br>
-    <button onclick="checkPass()">فتح الرسالة</button>
+
+<div class="heart">❤️</div>
+
+<h1>رسالة خاصة لـ Safroot</h1>
+
+<p>اكتبي كلمة السر ❤️</p>
+
+<input id="pass" type="password" placeholder="كلمة السر">
+
+<br>
+
+<button onclick="openMsg()">فتح الرسالة</button>
+
 </div>
+
+
 
 <div id="content" class="container hidden">
 
-```
+
 <h1>❤️ Safroot ❤️</h1>
 
-<div id="counter"></div>
+
+<div class="counter">
+
+<div class="box">
+<div id="days">0</div>
+يوم
+</div>
+
+<div class="box">
+<div id="hours">0</div>
+ساعة
+</div>
+
+<div class="box">
+<div id="mins">0</div>
+دقيقة
+</div>
+
+<div class="box">
+<div id="secs">0</div>
+ثانية
+</div>
+
+</div>
+
+
 
 <div class="card">
-    <p>
-```
+
+<div id="typing"></div>
+
+</div>
+
+
+
+
+<div class="card">
+
 
 يا نبض قلبي وحتة مني ❤️
 
 أنا بكتبلك الرسالة دي وأنا قلبي واجعني جداً على الزعل اللي أنا سببتهولك.
 
-عارف إن اللي حصل مني كان قلة عقل وإن تصرفي كان طايش وماقدرش أدافع عن نفسي، بس والله يا حبيبتي ما كان قصدي أجرحك أبدًا ولا يهون عليا لحظة حزن في عينيك.
+عارف إن اللي حصل مني كان قلة عقل وإن تصرفي كان طايش وماقدرش أدافع عن نفسي.
 
-أنا طول اليوم قاعد تايه، وبقيت قاعد في البيت كأني أبو حفيظة من كتر النكد والندم اللي أنا فيه.
+بس والله يا حبيبتي ما كان قصدي أجرحك أبداً ولا يهون عليا لحظة حزن في عينيك.
+
+أنا طول اليوم قاعد تايه وبقيت قاعد في البيت كأني أبو حفيظة من كتر النكد والندم اللي أنا فيه.
 
 أنا مستعد أعمل أي حاجة عشان ترجعي تضحكي تاني.
 
-انتي مش بس حبيبتي، انتي سندي وأماني وكل دنيتي، وماقدرش أعيش وأنتي زعلانة مني.
+انتي مش بس حبيبتي، انتي سندي وأماني وكل دنيتي.
 
-افتحي بقى صفحة جديدة، ده أنا غلبت معاكي ومبقاش فيا حيل للزعل ده.
+وماقدرش أعيش وأنتي زعلانة مني.
 
-سامحيني بقي لو لسه ليا عندك أي حاجة حلوة تستاهل تسامحيني عشانها.
+افتحي صفحة جديدة معايا.
 
-والله ما هتتكرر تاني ❤️ </p> </div>
+سامحيني ❤️
 
-```
-<div class="card">
-    <div id="typing"></div>
 </div>
+
+
+
 
 <button onclick="window.open('https://youtu.be/DNZzquw45-k?si=fzWkiwB0uHeBGG1X','_blank')">
-    🎵 اضغطي هنا واسمعي الأغنية
+
+🎵 اضغطي هنا واسمعي الأغنية
+
 </button>
 
-<h2 style="margin-top:40px;">
-    ❤️ من دوڤي إلى Safroot ❤️
-</h2>
 
-<p>مهما حصل بينا، هتفضلي أغلى حد في قلبي.</p>
-```
+
+
+<div class="card">
+
+<h2>💌 آخر حاجة</h2>
+
+<p>
+مهما حصل بينا...
+<br>
+هتفضلي حد غالي ومميز في حياتي ❤️
+</p>
 
 </div>
 
+
+
+</div>
+
+
+
 <script>
-function checkPass(){
-    if(document.getElementById("pass").value==="بحبك"){
-        document.getElementById("login").style.display="none";
-        document.getElementById("content").classList.remove("hidden");
-        startTyping();
-    }else{
-        alert("كلمة السر غير صحيحة ❤️");
-    }
+
+
+function openMsg(){
+
+let p=document.getElementById("pass").value;
+
+if(p=="بحبك"){
+
+document.getElementById("login").style.display="none";
+
+document.getElementById("content").classList.remove("hidden");
+
+typing();
+
+}else{
+
+alert("غلط ❤️");
+
 }
 
-const startDate = new Date("2023-12-29T00:00:00");
+}
+
+
+
+let start=new Date("2023-12-29");
+
 
 setInterval(()=>{
-    const now = new Date();
-    const diff = now - startDate;
 
-    const days = Math.floor(diff/(1000*60*60*24));
-    const hours = Math.floor((diff/(1000*60*60))%24);
-    const mins = Math.floor((diff/(1000*60))%60);
-    const secs = Math.floor((diff/1000)%60);
+let now=new Date();
 
-    document.getElementById("counter").innerHTML =
-    `⏳ بقالنا مع بعض<br>${days} يوم • ${hours} ساعة • ${mins} دقيقة • ${secs} ثانية`;
+let diff=now-start;
+
+
+document.getElementById("days").innerHTML=Math.floor(diff/86400000);
+
+document.getElementById("hours").innerHTML=Math.floor(diff/3600000)%24;
+
+document.getElementById("mins").innerHTML=Math.floor(diff/60000)%60;
+
+document.getElementById("secs").innerHTML=Math.floor(diff/1000)%60;
+
+
 },1000);
 
-function startTyping(){
-    const text = "حقك عليا يا قمر أنا غبي وزعلتك وكنت حمار وغبي وبجد انا مش عارف اعيش يومي من غيرك، حاولي تسامحيني ❤️";
-    let i=0;
-    const speed=60;
 
-    const timer=setInterval(()=>{
-        document.getElementById("typing").innerHTML += text.charAt(i);
-        i++;
-        if(i>=text.length){
-            clearInterval(timer);
-        }
-    },speed);
+
+
+
+function typing(){
+
+let text="حقك عليا يا قمر ❤️ أنا غبي وزعلتك وكنت حمار وغبي وبجد أنا مش عارف أعيش يومي من غيرك... حاولي تسامحيني ❤️";
+
+let i=0;
+
+
+let t=setInterval(()=>{
+
+document.getElementById("typing").innerHTML+=text[i];
+
+i++;
+
+if(i>=text.length)clearInterval(t);
+
+
+},70);
+
 }
+
+
+
+
+
+setInterval(()=>{
+
+let h=document.createElement("div");
+
+h.innerHTML="❤️";
+
+h.className="heart-fall";
+
+h.style.left=Math.random()*100+"%";
+
+document.body.appendChild(h);
+
+
+setTimeout(()=>h.remove(),5000);
+
+
+},500);
+
+
 </script>
+
 
 </body>
 </html>
