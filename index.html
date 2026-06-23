@@ -16,8 +16,7 @@ box-sizing:border-box;
 body{
 margin:0;
 font-family:Tahoma,Arial;
-background:
-linear-gradient(135deg,#080808,#351024);
+background:linear-gradient(135deg,#080808,#351024);
 color:white;
 text-align:center;
 min-height:100vh;
@@ -29,11 +28,9 @@ margin:auto;
 padding:25px;
 }
 
-
 .hidden{
 display:none;
 }
-
 
 .card{
 background:rgba(255,255,255,.1);
@@ -53,102 +50,84 @@ animation:pulse 1.5s infinite;
 
 
 @keyframes pulse{
-
 50%{
 transform:scale(1.2);
 }
-
 }
 
 
-button,input{
-
+input,button{
 padding:15px;
 border:0;
 border-radius:20px;
 margin:10px;
 font-size:17px;
-
 }
 
 
 button{
-
 background:#ff4f91;
 color:white;
-
 }
 
 
 .couple-photo{
-
 width:90%;
 max-width:400px;
 border-radius:30px;
 margin:20px;
 box-shadow:0 0 40px #ff4f91;
 animation:show 2s;
-
 }
 
 
 @keyframes show{
-
 from{
 opacity:0;
 transform:scale(.8);
 }
-
 to{
 opacity:1;
 transform:scale(1);
 }
-
 }
 
 
 
 .counter{
-
 display:flex;
 justify-content:center;
 gap:10px;
 flex-wrap:wrap;
-
 }
 
 
 .box{
-
 background:rgba(255,255,255,.15);
 padding:15px;
 border-radius:20px;
 min-width:80px;
-
 }
 
 
 #typing{
-
 font-size:22px;
 color:#ffd2e5;
 min-height:100px;
-
 }
 
 
-.fade{
 
-animation:fade 1.5s;
-
+.music-box{
+background:rgba(255,255,255,.1);
+border-radius:25px;
+padding:20px;
 }
 
 
-@keyframes fade{
-
-from{opacity:0}
-to{opacity:1}
-
+audio{
+width:100%;
+margin-top:15px;
 }
 
 
@@ -164,27 +143,19 @@ to{opacity:1}
 
 <div id="login" class="container">
 
-
 <div class="heart">❤️</div>
-
 
 <h1>رسالة خاصة لـ Safroot</h1>
 
-<p>
-في حاجة معمولة مخصوص ليكي ❤️
-</p>
-
+<p>في حاجة معمولة مخصوص ليكي ❤️</p>
 
 <input id="pass" type="password" placeholder="كلمة السر">
 
-
 <br>
-
 
 <button onclick="openPage()">
 فتح الهدية 🎁
 </button>
-
 
 </div>
 
@@ -192,24 +163,18 @@ to{opacity:1}
 
 
 
-<div id="page" class="container hidden fade">
+<div id="page" class="container hidden">
 
 
-<h1>
-❤️ Safroot ❤️
-</h1>
+<h1>❤️ Safroot ❤️</h1>
 
 
 
 <div class="card">
 
-<h2>
-حكايتنا بدأت من ❤️
-</h2>
+<h2>حكايتنا بدأت من ❤️</h2>
 
-<h2>
-29 / 12 / 2023
-</h2>
+<h2>29 / 12 / 2023</h2>
 
 
 <div class="counter">
@@ -247,17 +212,15 @@ to{opacity:1}
 
 
 
+
 <div class="card">
 
-<h2>
-ذكرياتنا ❤️
-</h2>
-
+<h2>ذكرياتنا ❤️</h2>
 
 <img src="ourphoto.jpg.jpeg" class="couple-photo">
 
-
 </div>
+
 
 
 
@@ -265,15 +228,10 @@ to{opacity:1}
 
 <div class="card">
 
-
-<h2>
-اقرأي دي الأول ❤️
-</h2>
-
+<h2>اقرأي دي الأول ❤️</h2>
 
 <div id="typing"></div>
 
-
 </div>
 
 
@@ -283,14 +241,9 @@ to{opacity:1}
 
 <div class="card">
 
-
-<h2>
-يا نبض قلبي وحتة مني ❤️
-</h2>
-
+<h2>يا نبض قلبي وحتة مني ❤️</h2>
 
 <p>
-
 
 أنا بكتبلك الرسالة دي وأنا قلبي واجعني جداً على الزعل اللي أنا سببتهولك.
 
@@ -308,9 +261,26 @@ to{opacity:1}
 
 سامحيني ❤️
 
-
 </p>
 
+</div>
+
+
+
+
+
+
+
+
+<div class="card music-box">
+
+<h2>🎵 الأغنية دي ليكي ❤️</h2>
+
+<audio id="song" controls>
+
+<source src="song.mp3" type="audio/mpeg">
+
+</audio>
 
 </div>
 
@@ -321,43 +291,17 @@ to{opacity:1}
 
 
 <div class="card">
-
-
-<h2>
-🎵 الأغنية دي ليكي
-</h2>
-
-
-<button onclick="window.open('https://youtu.be/DNZzquw45-k?si=fzWkiwB0uHeBGG1X','_blank')">
-
-اسمعي الأغنية ❤️
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="card">
-
 
 <button onclick="finalMsg()">
 
-آخر حاجة ❤️
+آخر مفاجأة ❤️
 
 </button>
 
 
 <h2 id="final"></h2>
 
-
 </div>
-
 
 
 
@@ -375,7 +319,6 @@ to{opacity:1}
 
 function openPage(){
 
-
 if(document.getElementById("pass").value=="بحبك"){
 
 
@@ -383,18 +326,14 @@ document.getElementById("login").style.display="none";
 
 document.getElementById("page").classList.remove("hidden");
 
-
 typing();
 
 
 }else{
 
-
 alert("كلمة السر غلط ❤️");
 
-
 }
-
 
 }
 
@@ -425,8 +364,6 @@ secs.innerHTML=Math.floor(diff/1000)%60;
 
 
 
-
-
 function typing(){
 
 
@@ -450,9 +387,7 @@ if(i>=text.length)
 clearInterval(timer);
 
 
-
 },70);
-
 
 
 }
@@ -466,14 +401,13 @@ function finalMsg(){
 
 document.getElementById("final").innerHTML=
 
-"❤️مهما حصل بينا.. هتفضلي حد مميز وغالي عندي بحبك ياحلي دون دون في الدنيا ❤️";
+"❤️ مهما حصل بينا.. هتفضلي حد غالي ومميز عندي ❤️";
 
 
 }
 
 
 </script>
-
 
 
 </body>
