@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Safroot ❤️</title>
 
 <style>
-*{box-sizing:border-box}
+
+*{
+box-sizing:border-box;
+}
 
 body{
 margin:0;
 font-family:Tahoma,Arial;
-background:radial-gradient(circle,#4a1235,#050505);
+background:
+linear-gradient(135deg,#080808,#351024);
 color:white;
 text-align:center;
-overflow-x:hidden;
+min-height:100vh;
 }
 
 .container{
-max-width:850px;
+max-width:900px;
 margin:auto;
 padding:25px;
 }
 
-.hidden{display:none}
+
+.hidden{
+display:none;
+}
+
 
 .card{
-background:rgba(255,255,255,.12);
+background:rgba(255,255,255,.1);
 backdrop-filter:blur(15px);
 border-radius:25px;
 padding:25px;
 margin:25px 0;
 box-shadow:0 0 35px rgba(255,80,150,.25);
 line-height:2;
-font-size:18px;
 }
 
 
@@ -43,69 +51,106 @@ font-size:90px;
 animation:pulse 1.5s infinite;
 }
 
+
 @keyframes pulse{
-50%{transform:scale(1.2)}
+
+50%{
+transform:scale(1.2);
+}
+
 }
 
 
-input,button{
-padding:14px;
-border-radius:20px;
+button,input{
+
+padding:15px;
 border:0;
+border-radius:20px;
 margin:10px;
 font-size:17px;
+
 }
 
 
 button{
+
 background:#ff4f91;
 color:white;
+
 }
 
 
+.couple-photo{
+
+width:90%;
+max-width:400px;
+border-radius:30px;
+margin:20px;
+box-shadow:0 0 40px #ff4f91;
+animation:show 2s;
+
+}
+
+
+@keyframes show{
+
+from{
+opacity:0;
+transform:scale(.8);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+
+
 .counter{
+
 display:flex;
 justify-content:center;
 gap:10px;
 flex-wrap:wrap;
+
 }
 
 
 .box{
+
 background:rgba(255,255,255,.15);
-border-radius:20px;
 padding:15px;
-min-width:90px;
+border-radius:20px;
+min-width:80px;
+
 }
 
 
 #typing{
-font-size:23px;
-min-height:120px;
-color:#ffd6e7;
-}
 
+font-size:22px;
+color:#ffd2e5;
+min-height:100px;
 
-.star{
-position:fixed;
-top:-20px;
-animation:fall 6s linear infinite;
-}
-
-
-@keyframes fall{
-to{transform:translateY(110vh)}
 }
 
 
 .fade{
+
 animation:fade 1.5s;
+
 }
 
+
 @keyframes fade{
+
 from{opacity:0}
 to{opacity:1}
+
 }
+
 
 
 </style>
@@ -116,20 +161,30 @@ to{opacity:1}
 <body>
 
 
+
 <div id="login" class="container">
+
 
 <div class="heart">❤️</div>
 
+
 <h1>رسالة خاصة لـ Safroot</h1>
 
-<p>في حاجة معمولة مخصوص ليكي ❤️</p>
+<p>
+في حاجة معمولة مخصوص ليكي ❤️
+</p>
 
 
 <input id="pass" type="password" placeholder="كلمة السر">
 
+
 <br>
 
-<button onclick="openPage()">فتح الهدية 🎁</button>
+
+<button onclick="openPage()">
+فتح الهدية 🎁
+</button>
+
 
 </div>
 
@@ -140,22 +195,31 @@ to{opacity:1}
 <div id="page" class="container hidden fade">
 
 
-<h1>❤️ Safroot ❤️</h1>
+<h1>
+❤️ Safroot ❤️
+</h1>
+
 
 
 <div class="card">
 
-<h2>حكايتنا بدأت من ❤️</h2>
+<h2>
+حكايتنا بدأت من ❤️
+</h2>
 
-<h3>29 / 12 / 2023</h3>
+<h2>
+29 / 12 / 2023
+</h2>
 
 
 <div class="counter">
+
 
 <div class="box">
 <div id="days">0</div>
 يوم
 </div>
+
 
 <div class="box">
 <div id="hours">0</div>
@@ -185,9 +249,13 @@ to{opacity:1}
 
 <div class="card">
 
-<h2>اقرأي دي الأول ❤️</h2>
+<h2>
+ذكرياتنا ❤️
+</h2>
 
-<div id="typing"></div>
+
+<img src="ourphoto.jpg" class="couple-photo">
+
 
 </div>
 
@@ -197,9 +265,32 @@ to{opacity:1}
 
 <div class="card">
 
-<h2>يا نبض قلبي وحتة مني ❤️</h2>
+
+<h2>
+اقرأي دي الأول ❤️
+</h2>
+
+
+<div id="typing"></div>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+يا نبض قلبي وحتة مني ❤️
+</h2>
+
 
 <p>
+
 
 أنا بكتبلك الرسالة دي وأنا قلبي واجعني جداً على الزعل اللي أنا سببتهولك.
 
@@ -217,7 +308,9 @@ to{opacity:1}
 
 سامحيني ❤️
 
+
 </p>
+
 
 </div>
 
@@ -226,34 +319,21 @@ to{opacity:1}
 
 
 
-<div class="card">
-
-<h2>حاجات عايزك تعرفيها 🌹</h2>
-
-<p>
-وجودك فرق معايا ❤️
-<br>
-زعلك مش سهل عليا
-<br>
-وأهم حاجة عندي أشوفك مبسوطة
-</p>
-
-</div>
-
-
-
-
-
 
 <div class="card">
 
-<h2>🎵 أغنية ليكي</h2>
+
+<h2>
+🎵 أغنية ليكي
+</h2>
+
 
 <button onclick="window.open('https://youtu.be/DNZzquw45-k?si=fzWkiwB0uHeBGG1X','_blank')">
 
-اضغطي هنا واسمعيها ❤️
+اسمعي الأغنية ❤️
 
 </button>
+
 
 </div>
 
@@ -262,22 +342,27 @@ to{opacity:1}
 
 
 
+
 <div class="card">
 
-<button onclick="surprise()">
 
-اضغطي هنا للمفاجأة ❤️
+<button onclick="finalMsg()">
+
+آخر حاجة ❤️
 
 </button>
 
 
 <h2 id="final"></h2>
 
-</div>
-
-
 
 </div>
+
+
+
+
+</div>
+
 
 
 
@@ -287,21 +372,29 @@ to{opacity:1}
 <script>
 
 
+
 function openPage(){
 
+
 if(document.getElementById("pass").value=="بحبك"){
+
 
 document.getElementById("login").style.display="none";
 
 document.getElementById("page").classList.remove("hidden");
 
+
 typing();
+
 
 }else{
 
-alert("جربي تاني ❤️");
+
+alert("كلمة السر غلط ❤️");
+
 
 }
+
 
 }
 
@@ -313,16 +406,17 @@ let start=new Date("2023-12-29");
 
 setInterval(()=>{
 
-let d=new Date()-start;
+
+let diff=new Date()-start;
 
 
-days.innerHTML=Math.floor(d/86400000);
+days.innerHTML=Math.floor(diff/86400000);
 
-hours.innerHTML=Math.floor(d/3600000)%24;
+hours.innerHTML=Math.floor(diff/3600000)%24;
 
-mins.innerHTML=Math.floor(d/60000)%60;
+mins.innerHTML=Math.floor(diff/60000)%60;
 
-secs.innerHTML=Math.floor(d/1000)%60;
+secs.innerHTML=Math.floor(diff/1000)%60;
 
 
 },1000);
@@ -331,71 +425,55 @@ secs.innerHTML=Math.floor(d/1000)%60;
 
 
 
+
+
 function typing(){
 
-let t="حقك عليا يا قمر ❤️ أنا غبي وزعلتك وكنت حمار وغبي.. ومش عارف أعيش يومي من غيرك.. حاولي تسامحيني";
+
+let text=
+"حقك عليا يا قمر ❤️ أنا غبي وزعلتك.. وكنت حمار وغبي.. ومش عارف أعيش يومي من غيرك.. حاولي تسامحيني";
+
 
 let i=0;
 
-let x=setInterval(()=>{
 
-typingBox=document.getElementById("typing");
+let timer=setInterval(()=>{
 
-typingBox.innerHTML+=t[i];
+
+document.getElementById("typing").innerHTML+=text[i];
+
 
 i++;
 
-if(i>=t.length)clearInterval(x);
+
+if(i>=text.length)
+clearInterval(timer);
+
+
 
 },70);
 
+
+
 }
 
 
 
 
-function surprise(){
+
+function finalMsg(){
+
 
 document.getElementById("final").innerHTML=
-"❤️ مهما حصل بينا هتفضلي حد مميز في قلبي ❤️";
 
-for(let i=0;i<30;i++){
+"❤️ مهما حصل بينا.. هتفضلي حد مميز وغالي عندي ❤️";
 
-let h=document.createElement("div");
-
-h.className="star";
-
-h.innerHTML="❤️";
-
-h.style.left=Math.random()*100+"%";
-
-document.body.appendChild(h);
 
 }
-
-}
-
-
-
-
-setInterval(()=>{
-
-let h=document.createElement("div");
-
-h.className="star";
-
-h.innerHTML="❤️";
-
-h.style.left=Math.random()*100+"%";
-
-document.body.appendChild(h);
-
-setTimeout(()=>h.remove(),6000);
-
-},700);
 
 
 </script>
+
 
 
 </body>
