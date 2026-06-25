@@ -1,98 +1,75 @@
 <!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Safroot ❤️</title>
+<title>رسالة خاصة لـ Safroot ❤️</title>
 
 <style>
-
-*{
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
-margin:0;
-font-family:Tahoma,Arial;
-background:linear-gradient(135deg,#080808,#351024);
-color:white;
+font-family:Tahoma,Arial,sans-serif;
+background:linear-gradient(135deg,#0f0f0f,#311224);
+color:#fff;
 text-align:center;
 min-height:100vh;
+padding:20px;
 }
+
+.hidden{display:none}
 
 .container{
 max-width:900px;
 margin:auto;
-padding:25px;
-}
-
-.hidden{
-display:none;
 }
 
 .card{
-background:rgba(255,255,255,.1);
-backdrop-filter:blur(15px);
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
 border-radius:25px;
 padding:25px;
-margin:25px 0;
-box-shadow:0 0 35px rgba(255,80,150,.25);
-line-height:2;
+margin:20px 0;
+box-shadow:0 0 25px rgba(255,105,180,.15);
 }
 
+h1,h2,h3{
+margin-bottom:15px;
+}
 
 .heart{
 font-size:90px;
 animation:pulse 1.5s infinite;
 }
 
-
 @keyframes pulse{
-50%{
-transform:scale(1.2);
-}
+50%{transform:scale(1.15)}
 }
 
-
-input,button{
+input{
 padding:15px;
-border:0;
-border-radius:20px;
-margin:10px;
-font-size:17px;
+border:none;
+border-radius:15px;
+width:250px;
+text-align:center;
+font-size:18px;
 }
-
 
 button{
+padding:12px 20px;
+border:none;
+border-radius:15px;
+cursor:pointer;
+font-size:17px;
+margin:8px;
 background:#ff4f91;
-color:white;
+color:#fff;
 }
 
-
-.couple-photo{
-width:90%;
-max-width:400px;
-border-radius:30px;
-margin:20px;
-box-shadow:0 0 40px #ff4f91;
-animation:show 2s;
+button:hover{
+opacity:.9;
 }
-
-
-@keyframes show{
-from{
-opacity:0;
-transform:scale(.8);
-}
-to{
-opacity:1;
-transform:scale(1);
-}
-}
-
-
 
 .counter{
 display:flex;
@@ -101,130 +78,95 @@ gap:10px;
 flex-wrap:wrap;
 }
 
-
 .box{
-background:rgba(255,255,255,.15);
+background:rgba(255,255,255,.12);
 padding:15px;
-border-radius:20px;
-min-width:80px;
+border-radius:15px;
+min-width:90px;
 }
 
+.box div{
+font-size:22px;
+font-weight:bold;
+}
 
 #typing{
 font-size:22px;
-color:#ffd2e5;
-min-height:100px;
+line-height:2;
+min-height:120px;
+color:#ffd5e6;
 }
 
-
-
-.music-box{
-background:rgba(255,255,255,.1);
-border-radius:25px;
-padding:20px;
+.gift{
+font-size:55px;
+margin:10px;
 }
 
-
-audio{
-width:100%;
-margin-top:15px;
+.final-message{
+font-size:22px;
+line-height:2;
+color:#ffd5e6;
 }
-
-
-
 </style>
 
 </head>
 
-
 <body>
-
-
 
 <div id="login" class="container">
 
 <div class="heart">❤️</div>
 
-<h1>رسالة حب لـ Safroot</h1>
+<h1>رسالة خاصة لـ Safroot</h1>
 
-<p>في حاجة معمولة مخصوص عشان حبيبي ❤️</p>
+<p style="margin:15px 0;">
+في حاجة معمولة مخصوص ليكي ❤️
+</p>
 
-<input id="pass" type="password" placeholder="كلمة السر">
+<input type="password" id="pass" placeholder="كلمة السر">
 
-<br>
+<br><br>
 
-<button onclick="openPage()">
-افتح يا سمسم 🎁
+<button onclick="openGift()">
+فتح الهدية 🎁
 </button>
 
 </div>
 
-
-
-
-
-<div id="page" class="container hidden">
-
+<div id="mainPage" class="container hidden">
 
 <h1>❤️ Safroot ❤️</h1>
 
-
-
 <div class="card">
 
-<h2>حكايتنا بدأت من ❤️</h2>
-
-<h2>29 / 12 / 2023</h2>
-
+<h2>حكايتنا بدأت من</h2>
+<h3>29 / 12 / 2023 ❤️</h3>
 
 <div class="counter">
-
 
 <div class="box">
 <div id="days">0</div>
 يوم
 </div>
 
-
 <div class="box">
 <div id="hours">0</div>
 ساعة
 </div>
-
 
 <div class="box">
 <div id="mins">0</div>
 دقيقة
 </div>
 
-
 <div class="box">
 <div id="secs">0</div>
 ثانية
 </div>
 
-
 </div>
 
 </div>
-
-
-
-
-
-
-<div class="card">
-
-<h2>ذكرياتنا ❤️</h2>
-
-<img src="ourphoto.jpg.jpeg" class="couple-photo">
-
-</div>
-
-
-
-
-
 
 <div class="card">
 
@@ -234,30 +176,24 @@ margin-top:15px;
 
 </div>
 
-
-
-
-
-
 <div class="card">
 
-<h2>لسه انت زهقتي ولا ايه ❤️</h2>
+<h2>يا نبض قلبي وحتة مني ❤️</h2>
 
-<p>
+<p style="line-height:2">
 
-أنا بكتبلك الرسالة دي وأنا قلبي واجعني جداً على الزعل اللي أنا سببتهولك.
+أنا بكتبلك الرسالة دي وأنا قلبي واجعني جدًا على الزعل اللي أنا سببتهولك.
 
 عارف إن اللي حصل مني كان قلة عقل وإن تصرفي كان طايش.
 
-بس والله يا حبيبتي ما كان قصدي أجرحك أبداً.
-
-ولا يهون عليا لحظة حزن في عينيك.
+بس والله يا حبيبتي ما كان قصدي أجرحك أبدًا.
 
 أنا طول اليوم قاعد تايه وبقيت قاعد في البيت كأني أبو حفيظة من كتر النكد والندم.
 
 أنا مستعد أعمل أي حاجة عشان ترجعي تضحكي تاني.
 
-انتي مش بس حبيبتي، انتي سندي وأماني.
+انتي مش بس حبيبتي...
+انتي سندي وأماني وكل دنيتي.
 
 سامحيني ❤️
 
@@ -265,150 +201,196 @@ margin-top:15px;
 
 </div>
 
+<div class="card" id="giftsSection">
 
+<h2>🎁 افتحي صناديق المفاجآت</h2>
 
+<button onclick="openBox(1)">الصندوق الأول</button> <button onclick="openBox(2)">الصندوق الثاني</button> <button onclick="openBox(3)">الصندوق الثالث</button>
 
-
-
-
-
-<div class="card music-box">
-
-<h2>🎵 الأغنية دي ليكي ❤️</h2>
-
-<audio id="song" controls>
-
-<source src="song.mp3.mpeg" type="audio/mpeg">
-
-</audio>
+<div id="boxContent" style="margin-top:20px;font-size:20px;"></div>
 
 </div>
 
+<div id="questionSection" class="card hidden">
 
+<h2>طيب يا Safroot... 🥺</h2>
 
+<h3>لسه زعلانة مني؟</h3>
 
-
-
-
-<div class="card">
-
-<button onclick="finalMsg()">
-
-آخر حاجه خلاص ❤️
-
-</button>
-
-
-<h2 id="final"></h2>
+<button onclick="answerYes()">أيوة 😔</button> <button onclick="answerNo()">لا ❤️</button>
 
 </div>
 
+<div id="secondQuestion" class="card hidden">
 
+<div id="secondText"></div>
+
+<br>
+
+<h3>طب ولسه زعلانة مني؟ 🥺</h3>
+
+<button onclick="finalYes()">أيوة 😔</button> <button onclick="answerNo()">لا ❤️</button>
 
 </div>
 
+<div id="timelineEnd" class="card hidden">
 
+<h2>سؤال أخير ❤️</h2>
 
+<p style="line-height:2">
 
+لو رجع بيكي الزمن لـ 29/12/2023...
 
+هتختاري تبدأي الحكاية دي تاني؟
 
+</p>
+
+<button onclick="showFinal()">أكيد ❤️</button> <button onclick="showFinal()">طبعًا ❤️</button>
+
+</div>
+
+<div id="finalCard" class="card hidden">
+
+<div class="final-message">
+
+❤️
+
+يمكن أغلط...
+
+ويمكن أزعلك أوقات...
+
+لكن عمري ما هبطل أحبك.
+
+وشكرًا إنك كملتي الرسالة للنهاية.
+
+وأتمنى أشوف ضحكتك الجميلة تاني ❤️
+
+🌹
+
+</div>
+
+</div>
+
+</div>
 
 <script>
 
+function openGift(){
 
-
-function openPage(){
-
-if(document.getElementById("pass").value=="بحبك"){
-
+if(document.getElementById("pass").value==="بحبك"){
 
 document.getElementById("login").style.display="none";
+document.getElementById("mainPage").classList.remove("hidden");
 
-document.getElementById("page").classList.remove("hidden");
-
-typing();
-
+startTyping();
 
 }else{
 
-alert("كلمة السر غلط ❤️");
+alert("كلمة السر غير صحيحة ❤️");
 
 }
 
 }
 
-
-
-
-let start=new Date("2023-12-29");
-
+const startDate=new Date("2023-12-29T00:00:00");
 
 setInterval(()=>{
 
+const now=new Date();
+const diff=now-startDate;
 
-let diff=new Date()-start;
-
-
-days.innerHTML=Math.floor(diff/86400000);
-
-hours.innerHTML=Math.floor(diff/3600000)%24;
-
-mins.innerHTML=Math.floor(diff/60000)%60;
-
-secs.innerHTML=Math.floor(diff/1000)%60;
-
+document.getElementById("days").innerHTML=Math.floor(diff/86400000);
+document.getElementById("hours").innerHTML=Math.floor(diff/3600000)%24;
+document.getElementById("mins").innerHTML=Math.floor(diff/60000)%60;
+document.getElementById("secs").innerHTML=Math.floor(diff/1000)%60;
 
 },1000);
 
+function startTyping(){
 
-
-
-
-function typing(){
-
-
-let text=
-"حقك عليا يا قمر ❤️ أنا غبي وزعلتك.. وكنت حمار وغبي.. ومش عارف أعيش يومي من غيرك.. حاولي تسامحيني";
-
+const text="حقك عليا يا قمر ❤️ أنا غبي وزعلتك... ومش عارف أعيش يومي من غيرك... حاولي تسامحيني ❤️";
 
 let i=0;
 
+const timer=setInterval(()=>{
 
-let timer=setInterval(()=>{
-
-
-document.getElementById("typing").innerHTML+=text[i];
-
+document.getElementById("typing").innerHTML+=text.charAt(i);
 
 i++;
 
-
-if(i>=text.length)
+if(i>=text.length){
 clearInterval(timer);
+}
 
-
-},70);
-
+},60);
 
 }
 
+let openedBoxes=0;
 
+function openBox(num){
 
+const content=document.getElementById("boxContent");
 
+if(num===1){
+content.innerHTML="🎁 سر صغير... من أكتر الحاجات اللي بكرهها إني أشوفك زعلانة مني ❤️";
+}
 
-function finalMsg(){
+if(num===2){
+content.innerHTML="🎁 اعتراف... مهما اتخانقنا عمري ما نمت مرتاح وإنتي زعلانة ❤️";
+}
 
+if(num===3){
+content.innerHTML="🎁 حقيقة... انتي مش مجرد حبيبتي... انتي أكتر شخص فارق معايا ❤️";
+}
 
-document.getElementById("final").innerHTML=
+if(!window["box"+num]){
+window["box"+num]=true;
+openedBoxes++;
+}
 
-"❤️ مهما حصل بينا.. هتفضلي حد غالي ومميز عندي يا احلي دون دون في الدنيا ❤️";
-
+if(openedBoxes===3){
+setTimeout(()=>{
+document.getElementById("questionSection").classList.remove("hidden");
+},1000);
+}
 
 }
 
+function answerYes(){
+
+document.getElementById("questionSection").classList.add("hidden");
+document.getElementById("secondQuestion").classList.remove("hidden");
+
+document.getElementById("secondText").innerHTML=
+"عندك حق تزعلي... ومش هحاول أبرر اللي حصل. كل اللي هقوله إني فعلًا ندمان ونفسي أشوف ابتسامتك ترجع تاني ❤️";
+
+}
+
+function finalYes(){
+
+document.getElementById("secondQuestion").classList.add("hidden");
+document.getElementById("timelineEnd").classList.remove("hidden");
+
+}
+
+function answerNo(){
+
+document.getElementById("questionSection").classList.add("hidden");
+document.getElementById("secondQuestion").classList.add("hidden");
+
+document.getElementById("timelineEnd").classList.remove("hidden");
+
+}
+
+function showFinal(){
+
+document.getElementById("timelineEnd").classList.add("hidden");
+document.getElementById("finalCard").classList.remove("hidden");
+
+}
 
 </script>
-
 
 </body>
 </html>
